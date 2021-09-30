@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "user_tbl")
+@Table(name = "user_tbls")
 public class User {
     @Id
     private String username;

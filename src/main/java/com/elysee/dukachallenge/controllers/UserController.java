@@ -2,11 +2,8 @@ package com.elysee.dukachallenge.controllers;
 
 
 import com.elysee.dukachallenge.domain.User;
-import com.elysee.dukachallenge.services.TodoService;
 import com.elysee.dukachallenge.services.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +18,7 @@ import javax.validation.Valid;
 @Slf4j
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
 
     public UserController(UserService userService) {
         this.userService = userService;

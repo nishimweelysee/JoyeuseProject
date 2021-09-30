@@ -89,7 +89,6 @@ public class TodoController {
     }
 
     /**
-     * @param todo
      * @return Todo
      * */
     @ApiOperation(value = "Updating a Todo")
@@ -100,9 +99,7 @@ public class TodoController {
     }
 
     /**
-     * @param response  <h4>This is the response that we have to send to user which have content type of text/cvs </h4>
-     * @return void
-     * */
+     * @param response  <h4>This is the response that we have to send to user which have content type of text/cvs </h4> */
     @ApiOperation(value = "Exporting List of all Todo in Csv")
     @GetMapping("/export")
     public void exportToCSV(HttpServletResponse response) {
