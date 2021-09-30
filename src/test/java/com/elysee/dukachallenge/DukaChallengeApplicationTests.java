@@ -9,5 +9,4 @@ class DukaChallengeApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
